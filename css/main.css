@@ -212,6 +212,9 @@ textarea:focus {
     width: 10%;
     float: left;
   }
+  #dgu-nav li:hover {
+    background: #3A3A3A;
+  }
   #dgu-nav li a {
     padding-left: 0;
     padding-right: 0;
@@ -239,7 +242,7 @@ textarea:focus {
   }
   #dgu-nav li.active a {
     color: #fff;
-    background-image: url('/images/nav-chevron.png');
+    background-image: url('../images/nav-chevron.png');
     background-repeat: no-repeat;
     background-position: 0 0;
     background-color: transparent !important;
@@ -280,7 +283,7 @@ textarea:focus {
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
   #dgu-nav li.active a {
-    background-image: url("/images/nav-chevron@2x.png");
+    background-image: url("../images/nav-chevron@2x.png");
     background-size: 14px 7px;
     background-position: 0 0;
   }
@@ -292,6 +295,16 @@ textarea:focus {
 }
 .content-container {
   padding-top: 20px;
+}
+@media (max-width: 767px) {
+  .content-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.carousel {
+  background: #ccc;
+  padding: 180px 30px;
 }
 /*
 // Subnavigation 
